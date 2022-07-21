@@ -1,0 +1,147 @@
+h6{
+    margin-left: 40px;
+    font-weight: 700;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 17px;
+    margin-top: 15px;
+    color: black;
+}
+.Hanuman .H-img,
+.H-content {
+    display: inline-block;
+    margin-left: 30px;
+    
+}
+
+.H-img {
+   
+    margin-top: 4px;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    }
+    .H-img img {
+        opacity: 0.8;
+        box-shadow: 4px4px30px20px white;
+        transition: transform 1s;
+    }
+    .H-img img:hover{
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+.fa-clone {
+    margin-left: 30px;
+    font-weight: lighter;
+    font-size: small;
+}
+
+
+.Hanuman{
+    padding-left: 50px;
+}
+.right{
+    margin-top: 5px;
+}
+
+
+::ng-deep .mat-tab-label:focus{
+    background-color: #FFFFFF;
+}
+.table{
+    margin-left: 55px!important;
+    background-color: palevioletred;
+    overflow: hidden;
+    border: 1px solid #B9B9B9;
+    margin-top: 30px;
+    width: 690px;
+}
+
+.tabs{
+    padding-left: 71px;
+    padding-top: 23px;
+    }
+    #u1{
+        color: blue;
+
+    }
+    #r1{
+        color: red;
+    }
+
+.details{
+    box-sizing: border-box;
+    background-color: white;
+    width: 1225px;
+    padding-left: 10px;
+    padding-top: 8px;
+    
+    
+    border-radius: 5px;
+    }
+
+    
+    
+    
+
+    @media(max-width:758px){
+        
+        .Hanuman .H-content{
+            margin-top: 20px;
+            
+
+        }
+        
+        .tabs {
+            margin-top: 10px;
+            margin-right: 30px;
+
+        }
+
+    }
+
+    @media(max-width:800px){
+       
+        .right{
+            margin-top: 30px;
+            width: 340px;
+            overflow-x: scroll;
+            // overflow-y: scroll;
+            
+            height: auto;
+            font-size: 15px;
+            margin-left: 0px;
+            
+            
+        }
+        
+        .Hanuman{
+            padding-left: 0px;
+        }
+        .fa-clone {
+            margin-left: 7px;
+            font-weight: lighter;
+            font-size: small;
+        }
+    .table{
+            margin-left: 40px!important;
+            background-color: palevioletred;
+            
+        }
+        .details{
+            width: 300px;
+            overflow-x: scroll;
+        }
+        
+        
+        }
+
+
+   
+
+    
+   
+    
+    
+    

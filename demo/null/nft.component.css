@@ -1,0 +1,179 @@
+h6 {
+  margin-left: 40px;
+  font-weight: 700;
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 17px;
+  margin-top: 15px;
+  color: black;
+}
+
+.Hanuman .H-img,
+.H-content {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.H-img {
+  margin-top: 4px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.fa-clone {
+  margin-left: 30px;
+  font-weight: lighter;
+  font-size: small;
+}
+
+.H-content {
+  box-sizing: border-box;
+  background-color: white;
+  padding-right: 40px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-top: 15px;
+  height: 180px;
+  width: 995px;
+  line-height: 0.8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  position: absolute;
+}
+
+#p1 {
+  font-weight: 700;
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 18px;
+  margin-top: 10px;
+  color: black;
+}
+
+#d1 {
+  padding-left: 13px;
+  padding-left: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+
+#b1 {
+  padding-right: 2px;
+}
+
+#c1 {
+  padding-left: 4px;
+}
+
+#c2 {
+  padding-left: 29px;
+}
+
+#c3 {
+  padding-left: 20px;
+}
+
+#c4 {
+  padding-left: 35px;
+}
+
+#c5 {
+  padding-left: 48px;
+}
+
+.H-content span i {
+  font-weight: 50;
+}
+
+.H-content button {
+  margin-left: 800px;
+  background-color: blue;
+  color: white;
+  border: 1px solid black;
+  padding: 5px 16px;
+}
+
+.Hanuman {
+  padding-left: 40px;
+}
+
+#s1,
+#s2,
+#s3,
+#s4 {
+  padding-left: 20px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+
+.table {
+  margin-top: 30px;
+  margin-left: 1px;
+  padding-left: 28px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  border: 1px solid #B9B9B9;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 5px;
+}
+
+th {
+  background-color: rgb(65, 65, 197);
+  color: #dddddd;
+}
+
+td {
+  text-align: left;
+  padding: 8px;
+  padding-right: 500px;
+  overflow-x: hidden;
+}
+
+::ng-deep .mat-tab-label:focus {
+  background-color: #FFFFFF;
+}
+
+.tabs {
+  padding-left: 71px;
+  padding-top: 23px;
+}
+
+.details {
+  box-sizing: border-box;
+  background-color: white;
+  width: 1225px;
+  padding-left: 10px;
+  padding-top: 8px;
+  border-radius: 5px;
+}
+
+.value {
+  box-sizing: border-box;
+  background-color: white;
+  width: 1225px;
+  padding-bottom: 2px;
+  padding-top: 0.1px;
+  border-radius: 5px;
+}
+
+.Attributes {
+  width: 1170px;
+}
+
+#r1 {
+  color: red;
+}
+
+#u1 {
+  color: blue;
+}/*# sourceMappingURL=nft.component.css.map */

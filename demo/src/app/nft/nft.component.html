@@ -1,0 +1,160 @@
+<app-navbar (searchTextChanged)="onSearchTextEntered($event)"></app-navbar>
+<h6>NFT Token</h6>
+<br>
+
+<div class="Hanuman row " >
+    <div class="H-img">
+        <img src="{{data1.metadata.data.image}}" width="190px" height="180px">
+        
+    </div>
+
+
+<div class="col-sm-9 ml-4 flex-column right" style="background-color: rgb(216, 216, 148);" >
+    
+<div class="mt-2 ml-2 d-flex row "  >
+<div class=" font-weight-bold Nftright  flex-column " >
+      NFT Name
+    </div>
+    <div class="ml-1 font-weight-bold">:</div>
+    <div class=" ml-2 nftleft" >
+      {{ data1.metadata.data.name }}
+    </div>
+    
+    </div>
+
+
+<div class="mt-2 ml-2 d-flex row " ><div class=" font-weight-bold Nftright  flex-column " >
+   Creator
+  </div> <div class="ml-4 font-weight-bold">:</div>
+
+<div><select name="" id="a1" >
+ <option value="" id="a1">select creators</option>
+<option value="" id="a1" *ngFor="let address of data1.metadata.data.properties.creators">{{ address.address}}</option></select></div> </div>
+
+
+
+            <div class="mt-2 ml-2 d-flex row "  >
+            <div class="font-weight-bold Nftright  flex-column " >
+              Token id
+            </div>
+            <div class="ml-3 font-weight-bold">:</div>
+            <div class=" ml-2 nftleft" >
+              {{ data1.metadata.mint }}
+            </div>
+            <div> <i class="fa fa-clone" aria-hidden="true"></i></div>
+            </div>
+
+            <div class="mt-2 ml-2 d-flex row "  >
+                <div class="font-weight-bold Nftright  flex-column " >
+                  Mint id
+                </div>
+                <div class="ml-4 font-weight-bold">:</div>
+                <div class=" ml-2 nftleft" >
+                  {{ data1.tokenInfo.tokenAuthority }}
+                </div>
+                <div> <i class="fa fa-clone" aria-hidden="true"></i></div>
+                </div>
+
+            
+
+            <div class="mt-2 ml-2 d-flex row "  >
+                <div class="font-weight-bold Nftright  flex-column " >
+                    Total
+                </div>
+                <div class="ml-4 pl-3 font-weight-bold">:</div>
+                <div class=" ml-2 nftleft" >
+                  {{ data1.tokenInfo.supply }}
+                </div>
+                
+                </div>
+
+</div>
+</div>
+<br>
+
+<div class="tabs ">
+
+<mat-tab-group color="none">
+    <mat-tab  label="Attributes"> 
+        <div class="details" >
+        
+        
+        
+            <!-- <table class=" Attributes  " >
+                <th >trait type</th>
+                <th >value</th>
+                <tr *ngFor="let attribute of data1.metadata.data.attributes" >
+                  
+                    <td  >{{attribute.trait_type}}</td>
+                    <td  >{{attribute.value}}</td>
+                </tr>
+</table> -->
+
+<div class="table-responsive"><table class="table mx-5 " style="width: 90%;">
+  
+    <thead class="thead-dark">
+     
+        <tr>
+        
+        
+        <th scope="col">trait type</th>
+        <th scope="col">value</th>
+      
+      </tr>
+    
+    </thead>
+    
+    <tbody>
+      
+      <tr *ngFor="let attribute of data1.metadata.data.attributes" >
+                  
+        <td  >{{attribute.trait_type}}</td>
+        <td  >{{attribute.value}}</td>
+    </tr>
+    </tbody>
+  </table>
+  
+</div></div><br><br><br>
+</mat-tab>
+
+    <mat-tab id="tab2" label="MetaData"> 
+        <div class="details" >
+        <p >{{nft1}}</p>
+        <p >"updateAuthority" <span >:</span>
+        <span id="r1">{{ data1.metadata.updateAuthority}}</span></p>
+
+        <p >"mint" <span >:</span>
+         <span id="r1">{{data1.tokenInfo.tokenAuthority}}</span></p>
+
+        <p>"data" <span>:</span></p>
+        <p >"name" <span >:</span>
+        <span  id="r1">{{data1.metadata.data.name}}</span></p>
+
+        <p >"symbol" <span >:</span>
+        <span id="r1">{{data1.metadata.data.symbol}}</span></p>
+
+        <p >"uri" <span >:</span>
+        <span id="u1">{{data1.metadata.data.uri}}</span></p>
+
+        <p >"sellerFeeBasisPoints" <span >:</span>
+        <span >{{data1.metadata.data.seller_fee_basis_points}}</span></p>
+        
+        <p>"creators":[</p>
+        <p >"address" <span >:</span>
+        <span id="r1" >{{data1.account}}</span></p>
+        <p >"verified" <span >:</span>
+        <span >{{data1.tokenInfo.supply}}</span></p>
+        <p >"share" <span >:</span>
+        <span >{{data1.tokenInfo.supply}}</span></p>
+        <p>]</p>
+    </div>
+    <br>
+<br><br>
+
+ </mat-tab>
+
+    
+</mat-tab-group>
+</div>
+
+  
